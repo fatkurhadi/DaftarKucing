@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context=".Detail">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_received"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        tools:src="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_received"
+        android:layout_toEndOf="@id/img_received"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name_received"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Kucing"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+        <TextView
+            android:layout_below="@id/name_received"
+            android:id="@+id/remarks_received"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Hewan Peliharaan"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+        <TextView
+            android:layout_below="@id/remarks_received"
+            android:id="@+id/detail_received"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Hewan Peliharaan yang banyak diminati"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+    </LinearLayout>
+</RelativeLayout>
